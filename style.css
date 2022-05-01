@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.234);
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-banner {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.hero-banner h1 {
+  color: white;
+  /* font-family: Trebuchet MS; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 30vh;
+}
+
+.activities .r {
+  display: flex;
+  width: 100%;
+}
+.activities__activity {
+  background-color: rgb(19, 36, 45);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+}
+.activities__overlay {
+  background-color: rgba(0, 0, 0, 0.612);
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: 10em 0;
+  margin: 0 !important;
+  border: 0;
+  cursor: pointer;
+}
+.activities__overlay:hover {
+  background-color: rgba(0, 0, 0, 0.933);
+}
+.activities h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.activities .first-activity {
+  background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .second-activity {
+  background-image: url("https://images.pexels.com/photos/3061171/pexels-photo-3061171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .third-activity {
+  background-image: url("https://images.pexels.com/photos/2384576/pexels-photo-2384576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .fourth-activity {
+  background-image: url("https://images.pexels.com/photos/4091960/pexels-photo-4091960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.text-js {
+  opacity: 0;
+}
+
+.cursor {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  -webkit-animation: flash 0.5s none infinite alternate;
+          animation: flash 0.5s none infinite alternate;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.headline {
+  margin: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+.headline h1 {
+  letter-spacing: 1.6px;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
