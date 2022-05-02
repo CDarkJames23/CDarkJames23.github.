@@ -6,12 +6,48 @@
   overflow-x: hidden;
 }
 
+p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7em;
+}
+
 #background-video {
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
+}
+
+.second-section {
+  text-align: center;
+  padding: 6em 0;
+  max-width: 1100px;
+}
+.second-section__inner {
+  padding: 1em 0;
+}
+.second-section__inner p {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.half-image-text {
+  text-align: center;
+  padding: 6em 0;
+  max-width: 1100px;
+}
+.half-image-text__inner {
+  padding: 1em 0;
+}
+.half-image-text__inner p {
+  padding: 0.5em 0;
+  text-align: center;
+}
+.half-image-text img {
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner-overlay {
@@ -80,7 +116,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .activities .first-activity {
   background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -138,4 +174,9 @@
 .headline h1 {
   letter-spacing: 1.6px;
   font-weight: 300;
+}
+
+footer {
+  background-color: black;
+  padding-top: 30rem;
 }/*# sourceMappingURL=style.css.map */
