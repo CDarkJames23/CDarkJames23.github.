@@ -1,14 +1,63 @@
+@import "kayak.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+nav .row {
+  padding: 1rem 2rem;
+}
+nav .header-image {
+  background-image: url("logo5.png");
+  width: 120px;
+  height: 50px;
+  background-size: cover;
+}
+nav i {
+  color: white;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.634);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  border: 2.5px white solid;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: -4px;
+}
+
+.text-js span {
+  color: rgb(13, 170, 13);
 }
 
 p {
   font-family: "Raleway", sans-serif;
   line-height: 1.7em;
+  font-weight: 500;
+  color: rgb(48, 52, 58);
 }
 
 #background-video {
@@ -21,28 +70,47 @@ p {
 
 .second-section {
   text-align: center;
-  padding: 6em 0;
   max-width: 1100px;
-}
-.second-section__inner {
-  padding: 1em 0;
+  padding-bottom: 10em;
+  padding-top: 5em;
 }
 .second-section__inner p {
   padding: 0.5em 0;
-  text-align: center;
+}
+.second-section .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.second-section .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+.second-section__inner {
+  text-align: left !important;
+}
+
+.half-image-text .container {
+  padding: 2em 0;
 }
 
 .half-image-text {
   text-align: center;
-  padding: 6em 0;
   max-width: 1100px;
-}
-.half-image-text__inner {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 .half-image-text__inner p {
   padding: 0.5em 0;
-  text-align: center;
+}
+.half-image-text .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.half-image-text .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+.half-image-text__container {
+  padding: 10em 0;
 }
 .half-image-text img {
   max-height: 400px;
@@ -51,9 +119,9 @@ p {
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.234);
-  width: 100vw;
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.598);
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -65,8 +133,8 @@ p {
 }
 
 .hero-banner {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -79,17 +147,25 @@ p {
 }
 .hero-banner h1 {
   color: white;
-  /* font-family: Trebuchet MS; */
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   font-size: 6rem;
+}
+.hero-banner__title {
   margin-top: 30vh;
+  height: 160px;
 }
 
 .activities .r {
   display: flex;
   width: 100%;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .activities .r {
+    flex-direction: row;
+  }
 }
 .activities__activity {
   background-color: rgb(19, 36, 45);
@@ -104,10 +180,15 @@ p {
   transition: 0.5s;
   width: 100%;
   height: 100%;
-  padding: 10em 0;
+  padding: 3em 0;
   margin: 0 !important;
   border: 0;
   cursor: pointer;
+}
+@media (min-width: 600px) {
+  .activities__overlay {
+    padding: 8em 0;
+  }
 }
 .activities__overlay:hover {
   background-color: rgba(0, 0, 0, 0.933);
@@ -116,7 +197,12 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 600px) {
+  .activities h3 {
+    font-size: 3.5rem;
+  }
 }
 .activities .first-activity {
   background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -161,8 +247,211 @@ p {
   letter-spacing: 1.6px;
   font-weight: 300;
 }
+.headline h1 span {
+  color: green;
+}
 
-footer {
-  background-color: black;
-  padding-top: 30rem;
+.testimony {
+  overflow: hidden;
+  height: 1000px;
+}
+.testimony__container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.testimony__white {
+  height: 200px;
+  width: 100%;
+}
+.testimony img {
+  height: 700px;
+  position: relative;
+  top: -200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: 9999999;
+  max-width: 600px;
+  float: right;
+}
+.testimony__color {
+  background-color: rgb(16, 16, 16);
+  height: 600px;
+  width: 70%;
+  max-width: 1500px;
+  transform: translateY(-650px);
+  color: white;
+  padding-left: 100px;
+  padding-right: 300px;
+  padding-top: 200px;
+  z-index: 888;
+}
+.testimony__color .strong {
+  margin-bottom: 100px;
+}
+
+.blue {
+  background-color: #d5d8db;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  top: -600px;
+  z-index: -1000;
+}
+
+.CTA-button {
+  background-color: rgb(16, 16, 16);
+  padding-bottom: 9em;
+  padding-top: 9em;
+  color: white;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.CTA-button p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 25px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.CTA-button-light {
+  background-color: rgb(138, 153, 148);
+  background-image: url("scottland5.jpg");
+  padding-bottom: 9em;
+  padding-top: 9em;
+  text-align: center;
+  margin-bottom: 10rem;
+  background-size: cover;
+  background-position: top;
+}
+.CTA-button-light p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 500px;
+  transition: 1s ease-in-out;
+  background-color: rgb(47, 50, 64);
+  padding: 2rem;
+  z-index: 9999;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu ul {
+  padding-top: 10vh;
+  margin-left: 3rem;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+.menu i {
+  color: #ffffff;
+}
+.menu .fa-xmark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.menu input {
+  border: none;
+  width: 100%;
+  height: 4em;
+  padding-top: 1.5em;
+}
+.menu input::-moz-placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu input::placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu .small {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding-top: 0.7rem;
+}
+
+.overlay {
+  background-color: rgba(165, 167, 188, 0.67);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: 1s ease-in-out;
+  z-index: 9998;
+  display: none;
+}
+
+.overlay-visible {
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+.jq-open-menu {
+  top: 0;
+  right: 0;
+  width: 400px;
+  overflow-x: hidden;
+  transform: translateX(0);
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.jq-open-menu a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.jq-open-menu i {
+  color: #ffffff;
+  transform: scale(0.9);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+body > #header {
+  position: fixed;
+}
+
+#header {
+  position: fixed;
+  z-index: 9000;
+  overflow: auto;
+  transition: all 0.15s linear;
+  overflow: hidden;
+}
+
+#header.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background: white;
+}
+#header.active .header-image {
+  background-image: url("logo-dark.png");
+}
+#header.active i {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
