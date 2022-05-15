@@ -91,7 +91,7 @@ p {
 
 #background-video {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
@@ -157,7 +157,7 @@ p {
     text-align: left !important;
   }
   .half-image-text__text img {
-    width: 130px !important;
+    width: 10px !important;
   }
 }
 .half-image-text img {
@@ -186,8 +186,8 @@ p {
 }
 
 .hero-banner {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
