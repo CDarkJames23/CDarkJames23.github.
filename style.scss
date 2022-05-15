@@ -154,6 +154,8 @@ p {
   @include half-page();
   padding-bottom: 10em;
   padding-top: 5em;
+  width: 100%;
+  width: 300px;
 
   @media (max-width: 720px) {
     padding-bottom: 7em;
@@ -162,7 +164,7 @@ p {
     width: 100%;
     background-color: rgb(255, 255, 255);
     img {
-      width: 160px;
+      width: 200px;
     }
   }
 
@@ -372,10 +374,13 @@ p {
   &__container {
     width: 1100px;
     margin: 0 auto;
+    position: relative;
+    z-index: 99999999999999999999;
   }
   &__white {
     height: 200px;
     width: 100%;
+    background-color: red;
   }
   overflow: hidden;
 
