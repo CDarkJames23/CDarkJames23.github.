@@ -92,8 +92,13 @@ p {
 #background-video {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh !important;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: -2;
 }
 
