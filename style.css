@@ -5,6 +5,7 @@
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: aqua;
 }
 
 .container {
@@ -91,7 +92,7 @@ p {
 
 #background-video {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
