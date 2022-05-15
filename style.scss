@@ -138,16 +138,16 @@ p {
   }
 }
 
-.hiding-block {
-  @media (max-width: 720px) {
-    height: 130px;
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    background-color: rgb(152, 27, 27);
-    z-index: 9000;
-  }
-}
+// .hiding-block {
+//   @media (max-width: 720px) {
+//     height: 130px;
+//     position: absolute;
+//     top: 100vh;
+//     width: 100%;
+//     background-color: rgb(152, 27, 27);
+//     z-index: 9000;
+//   }
+// }
 
 .second-section {
   text-align: center;
