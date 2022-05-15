@@ -108,6 +108,16 @@ p {
   }
 }
 
+@media (max-width: 720px) {
+  .hiding-block {
+    height: 40px;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 .second-section {
   text-align: center;
   text-align: center;
@@ -131,7 +141,8 @@ p {
     padding-bottom: 7em;
     padding-top: 3.4em;
     margin-top: 100vh;
-    background-color: rgb(242, 47, 47);
+    width: 100%;
+    background-color: rgb(255, 255, 255);
   }
   .second-section img {
     width: 160px;
