@@ -105,15 +105,17 @@ p {
   width: 100vw;
   height: 100vh;
   max-height: 100vh !important;
-
   object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   z-index: -2;
   overflow: hidden;
+
+  @media (max-width: 720px) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 @mixin half-page {
@@ -141,11 +143,12 @@ p {
   @include half-page();
   padding-bottom: 10em;
   padding-top: 5em;
-  margin-top: 100vh;
 
   @media (max-width: 720px) {
     padding-bottom: 7em;
     padding-top: 3.4em;
+    margin-top: 100vh;
+    background-color: white;
     img {
       width: 160px;
     }

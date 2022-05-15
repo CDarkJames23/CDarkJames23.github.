@@ -95,13 +95,17 @@ p {
   max-height: 100vh !important;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   z-index: -2;
   overflow: hidden;
+}
+@media (max-width: 720px) {
+  #background-video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 .second-section {
@@ -110,7 +114,6 @@ p {
   max-width: 1100px;
   padding-bottom: 10em;
   padding-top: 5em;
-  margin-top: 100vh;
 }
 .second-section__inner p {
   padding: 0.5em 0;
@@ -127,6 +130,8 @@ p {
   .second-section {
     padding-bottom: 7em;
     padding-top: 3.4em;
+    margin-top: 100vh;
+    background-color: white;
   }
   .second-section img {
     width: 160px;
