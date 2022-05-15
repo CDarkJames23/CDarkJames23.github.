@@ -7,6 +7,11 @@
   overflow-x: hidden;
 }
 
+.container {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
 nav {
   position: fixed;
   top: 0px;
@@ -51,22 +56,41 @@ button {
 //   cursor: pointer;
 // }
 
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 0.9em;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  @media (min-width: 720px) {
+    font-size: 6rem;
+  }
+}
+
 h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+
+  @media (min-width: 720px) {
+    font-size: 30px;
+  }
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 50px;
-  letter-spacing: -4px;
-}
+  font-size: 28px;
+  letter-spacing: 1.54px;
 
-.text-js {
-  span {
-    color: rgb(13, 170, 13);
+  @media (min-width: 720px) {
+    font-size: 50px;
+    letter-spacing: -4px;
   }
 }
 
@@ -110,9 +134,18 @@ p {
 }
 
 .second-section {
+  text-align: center;
   @include half-page();
   padding-bottom: 10em;
   padding-top: 5em;
+
+  @media (max-width: 720px) {
+    padding-bottom: 7em;
+    padding-top: 3.4em;
+    img {
+      width: 160px;
+    }
+  }
 
   &__inner {
     text-align: left !important;
@@ -120,7 +153,8 @@ p {
 }
 
 .half-image-text .container {
-  padding: 2em 0;
+  padding-top: 2em;
+  padding-top: 2em;
 }
 
 .half-image-text {
@@ -131,13 +165,24 @@ p {
     padding: 10em 0;
   }
 
-  // &__container {
-  //   padding: 10em 0;
-  // }
+  &__text {
+    @media (max-width: 720px) {
+      text-align: left !important;
+      img {
+        width: 130px !important;
+      }
+    }
+  }
 
   img {
     max-height: 400px;
     object-fit: cover;
+  }
+
+  @media (max-width: 500px) {
+    &__hide-image {
+      display: none;
+    }
   }
 }
 
@@ -167,17 +212,10 @@ p {
   bottom: 0;
   z-index: 2;
 
-  h1 {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    text-align: center;
-    font-size: 6rem;
-  }
-
   &__title {
     margin-top: 30vh;
-    height: 160px;
+    min-height: 160px;
+    // background-color: aqua;
   }
 }
 
@@ -211,7 +249,7 @@ p {
     transition: 0.5s;
     width: 100%;
     height: 100%;
-    padding: 3em 0;
+    padding: 6em 0;
     margin: 0 !important;
     border: 0;
     cursor: pointer;
