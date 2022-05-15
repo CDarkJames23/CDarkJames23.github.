@@ -31,14 +31,52 @@ nav i {
   color: white;
 }
 
-button {
-  background-color: rgba(0, 0, 0, 0.634);
+.button-dark {
+  background-color: rgba(222, 230, 241, 0.241);
+  color: rgb(0, 0, 0);
+  border: 2.5px rgb(0, 0, 0) solid;
   font-family: "Raleway", sans-serif;
-  color: white;
-  border: 2.5px white solid;
   padding: 1rem 2rem;
   text-transform: uppercase;
-  margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.button-light {
+  background-color: rgba(0, 0, 0, 0.634);
+  color: white;
+  border: 2.5px white solid;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.button-dark {
+  background-color: rgba(222, 230, 241, 0.241);
+  color: rgb(0, 0, 0);
+  border: 2.5px rgb(0, 0, 0) solid;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.button-light {
+  background-color: rgba(0, 0, 0, 0.634);
+  color: white;
+  border: 2.5px white solid;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
 }
 
 h1 {
@@ -72,13 +110,26 @@ h2 {
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 1.54px;
+  font-size: 35px;
+  letter-spacing: -1.54px;
 }
 @media (min-width: 720px) {
   h3 {
     font-size: 50px;
     letter-spacing: -4px;
+  }
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+@media (min-width: 720px) {
+  h4 {
+    font-size: 50px;
+    letter-spacing: -5px;
   }
 }
 
@@ -348,7 +399,6 @@ p {
 
 .testimony {
   overflow: hidden;
-  height: 1000px;
 }
 .testimony__white {
   height: 200px;
@@ -365,7 +415,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  z-index: 9999999;
+  z-index: 9;
   max-width: 600px;
   float: right;
 }
@@ -396,6 +446,7 @@ p {
     padding-right: 2em;
     padding-left: 2em;
     padding-top: 20em;
+    margin-bottom: -630px;
   }
 }
 
@@ -406,6 +457,14 @@ p {
   position: relative;
   top: -600px;
   z-index: -1000;
+  margin-bottom: -1200px;
+  transform: translateY(-550px);
+}
+@media (max-width: 900px) {
+  .blue {
+    display: none;
+    margin-bottom: 0px;
+  }
 }
 
 .CTA-button {
