@@ -141,6 +141,7 @@ p {
   @include half-page();
   padding-bottom: 10em;
   padding-top: 5em;
+  margin-top: 100vh;
 
   @media (max-width: 720px) {
     padding-bottom: 7em;
