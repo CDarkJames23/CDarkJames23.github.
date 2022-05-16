@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999999;
+}
+nav .row {
+  padding: 1rem 2rem;
+}
+nav img {
+  width: 140px;
+}
+nav i {
+  color: white;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.634);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  border: 2.5px white solid;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: -4px;
+}
+
+.text-js span {
+  color: rgb(13, 170, 13);
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7em;
+  font-weight: 500;
+  color: rgb(48, 52, 58);
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.second-section {
+  text-align: center;
+  max-width: 1100px;
+  padding-bottom: 10em;
+  padding-top: 5em;
+}
+.second-section__inner p {
+  padding: 0.5em 0;
+}
+.second-section .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.second-section .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+.second-section__inner {
+  text-align: left !important;
+}
+
+.half-image-text .container {
+  padding: 2em 0;
+}
+
+.half-image-text {
+  text-align: center;
+  max-width: 1100px;
+  padding: 2em 0;
+}
+.half-image-text__inner p {
+  padding: 0.5em 0;
+}
+.half-image-text .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.half-image-text .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+.half-image-text__container {
+  padding: 10em 0;
+}
+.half-image-text img {
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.598);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.hero-banner h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 6rem;
+}
+.hero-banner__title {
+  margin-top: 30vh;
+  min-height: 150px;
+}
+
+.activities .r {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .activities .r {
+    flex-direction: row;
+  }
+}
+.activities__activity {
+  background-color: rgb(19, 36, 45);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+}
+.activities__overlay {
+  background-color: rgba(0, 0, 0, 0.612);
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: 3em 0;
+  margin: 0 !important;
+  border: 0;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .activities__overlay {
+    padding: 8em 0;
+  }
+}
+.activities__overlay:hover {
+  background-color: rgba(0, 0, 0, 0.933);
+}
+.activities h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+@media (min-width: 600px) {
+  .activities h3 {
+    font-size: 3.5rem;
+  }
+}
+.activities .first-activity {
+  background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .second-activity {
+  background-image: url("https://images.pexels.com/photos/3061171/pexels-photo-3061171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .third-activity {
+  background-image: url("https://images.pexels.com/photos/2384576/pexels-photo-2384576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.activities .fourth-activity {
+  background-image: url("https://images.pexels.com/photos/4091960/pexels-photo-4091960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.text-js {
+  opacity: 0;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.headline {
+  margin: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+.headline h1 {
+  letter-spacing: 1.6px;
+  font-weight: 300;
+}
+.headline h1 span {
+  color: green;
+}
+
+.testimony {
+  overflow: hidden;
+  height: 1000px;
+}
+.testimony__container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.testimony__white {
+  height: 200px;
+  width: 100%;
+}
+.testimony img {
+  height: 700px;
+  position: relative;
+  top: -200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: 9999999;
+  max-width: 600px;
+  float: right;
+}
+.testimony__color {
+  background-color: rgb(16, 16, 16);
+  height: 600px;
+  width: 70%;
+  max-width: 1500px;
+  transform: translateY(-650px);
+  color: white;
+  padding-left: 100px;
+  padding-right: 300px;
+  padding-top: 200px;
+  z-index: 888;
+}
+.testimony__color .strong {
+  margin-bottom: 100px;
+}
+
+.blue {
+  background-color: #d5d8db;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  top: -600px;
+  z-index: -1000;
+}
+
+.CTA-button {
+  background-color: rgb(16, 16, 16);
+  padding-bottom: 9em;
+  padding-top: 9em;
+  color: white;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.CTA-button p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 25px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.CTA-button-light {
+  background-color: rgb(138, 153, 148);
+  background-image: url("scottland5.jpg");
+  padding-bottom: 9em;
+  padding-top: 9em;
+  text-align: center;
+  margin-bottom: 10rem;
+  background-size: cover;
+  background-position: top;
+}
+.CTA-button-light p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.menu {
+  transform: translateX(100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  transition: 1s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  z-index: 10000000000000000000000000000000;
+}
+.menu .fa-xmark {
+  position: absolute;
+  z-index: 9999;
+  top: 10px;
+  right: 20px;
+}
+.menu input {
+  border: none;
+  width: 100%;
+  height: 4em;
+  padding-top: 1.5em;
+}
+.menu input::-moz-placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu input::placeholder {
+  font-size: 1rem;
+  color: rgba(151, 151, 151, 0.761);
+}
+.menu .small {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding-top: 0.7rem;
+}
+
+.overlay {
+  background-color: rgba(11, 25, 27, 0.872);
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  transition: 1s ease-in-out;
+  z-index: 39;
+}
+
+.jq-open-menu {
+  overflow-x: hidden;
+  transform: translateX(0);
+  height: 100%;
+}/*# sourceMappingURL=kayak copy.css.map */

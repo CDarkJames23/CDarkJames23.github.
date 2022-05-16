@@ -47,7 +47,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="kayaking.html">Kayaking</a></li>
-        <li><a href="index.html">Trips</a></li>
+        <li><a href="trips.html">Trips</a></li>
         <li><a href="index.html">Contact</a></li>
       </ul>
     </div>
@@ -55,22 +55,25 @@
     <div class="hero-banner">
       <div class="type-js headline">
         <div class="hero-banner__title">
-          <h1 class="text-js">Kayaking.</h1>
+          <h1 class="text-js">Dare to explore.</h1>
         </div>
-        <button>Contact Now</button>
+        <button class="button-light">Contact Now</button>
       </div>
     </div>
     <div class="banner-overlay"></div>
     <video id="background-video" autoplay loop muted>
       <source src="video6.mp4" type="video/mp4" />
     </video>
+    <div class="hiding-block"></div>
     <div class="second-section container">
       <div class="row between-xs middle-xs">
-        <div class="col-md-4 second-section__inner start-xs">
-          <img src="wild.png" />
+        <div class="col-sm-12 col-md-4 center-xs start-md">
+          <div>
+            <img src="wild.png" />
+          </div>
         </div>
-        <div class="col-md-8 second-section__inner end-xs">
-          <h2>Join our kayaking team!</h2>
+        <div class="col-sm-12 col-md-8 second-section__inner end-md">
+          <h2>PICK YOUR ADVENTURE!</h2>
 
           <p>
             Choose one of our programs and set yourself for the adventure of
@@ -82,29 +85,41 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="grid-image col-xs-12 col-md-4 first-kayak"></div>
-      <div class="grid-image col-xs-12 col-md-4 third-kayak"></div>
-      <div class="grid-image col-xs-12 col-md-4 fourth-kayak"></div>
-      <div class="grid-image col-xs-12 col-md-4 second-kayak"></div>
-      <div class="grid-image col-xs-12 col-md-4 fifth-kayak"></div>
-      <div class="grid-image col-xs-12 col-md-4 sixth-kayak"></div>
+    <div class="activities">
+      <div class="r">
+        <div class="activities__activity first-activity">
+          <div class="activities__overlay">
+            <h3>Adventure</h3>
+          </div>
+        </div>
+        <div class="activities__activity second-activity">
+          <div class="activities__overlay"><h3>Culture</h3></div>
+        </div>
+      </div>
+      <div class="r">
+        <div class="activities__activity third-activity">
+          <div class="activities__overlay"><h3>Kayaking</h3></div>
+        </div>
+        <div class="activities__activity fourth-activity">
+          <div class="activities__overlay"><h3>Hikes</h3></div>
+        </div>
+      </div>
     </div>
 
     <div class="half-image-text__container">
       <div class="half-image-text container">
         <div class="row between-xs var middle-xs">
-          <div class="col-xs-12 col-md-6 half-image-text__inner start-xs">
+          <div
+            class="col-xs-12 col-md-6 half-image-text__inner start-md half-image-text__hide-image"
+          >
             <img
-              style="object-fit: cover; width: 100%"
-              src="https://images.unsplash.com/photo-1593107757644-25f0b23e9297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+              src="https://images.pexels.com/photos/176383/pexels-photo-176383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
           </div>
           <div
-            class="col-md-offset-1 col-md-5 col-xs-12 start-xs half-image-text__inner"
+            class="col-md-offset-1 col-md-5 col-xs-12 start-xs half-image-text__inner half-image-text__text"
           >
             <img src="adventure.jpg" />
-            <hr />
             <p>
               Choose one of our programs and set yourself for the adventure of
               your life! Sed ut perspiciatis unde omnis iste natus error sit
@@ -117,7 +132,9 @@
 
       <div class="half-image-text container">
         <div class="row between-xs middle-xs">
-          <div class="col-xs-12 col-md-5 end-xs half-image-text__inner">
+          <div
+            class="col-xs-12 col-md-5 end-md half-image-text__inner half-image-text__text"
+          >
             <img src="discover.jpg" />
             <p>
               Choose one of our programs and set yourself for the adventure of
@@ -127,7 +144,7 @@
             </p>
           </div>
           <div
-            class="col-md-offset-1 col-xs-12 col-md-6 half-image-text__inner"
+            class="col-md-offset-1 col-xs-12 col-md-6 half-image-text__inner half-image-text__hide-image"
           >
             <img
               src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -138,13 +155,15 @@
 
       <div class="half-image-text container">
         <div class="row between-xs middle-xs">
-          <div class="col-md-6 col-xs-12 half-image-text__inner">
+          <div
+            class="col-md-6 col-xs-12 half-image-text__inner half-image-text__hide-image"
+          >
             <img
               src="https://images.pexels.com/photos/176383/pexels-photo-176383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
           </div>
           <div
-            class="half-image-text__inner start-xs col-md-offset-1 col-xs-12 col-md-5"
+            class="half-image-text__inner half-image-text__text start-md col-md-offset-1 col-xs-12 col-md-5"
           >
             <img src="Connection2.jpg" />
             <p>
@@ -159,7 +178,7 @@
     </div>
 
     <div class="testimony">
-      <div class="testimony__container">
+      <div class="testimony__container container">
         <div class="testimony__white"></div>
         <img src="man-in-nature.jpg" />
       </div>
@@ -195,13 +214,13 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h3>JOIN US NOW!</h3>
+            <h4>JOIN US NOW!</h4>
             <p>
               Choose one of our programs and set yourself for the adventure of
               your life! Sed ut perspiciatis unde omnis iste natus error sit
               voluptatem accusantium doloremque laudantium
             </p>
-            <button>Get in touch</button>
+            <button class="button-dark">Get in touch</button>
           </div>
         </div>
       </div>

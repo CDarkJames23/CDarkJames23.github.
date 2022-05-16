@@ -119,13 +119,14 @@ h3 {
 
 h4 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 39px;
+  letter-spacing: -4.6px;
 
-  @media (min-width: 720px) {
+  @media (min-width: 600px) {
     font-size: 50px;
-    letter-spacing: -5px;
+    letter-spacing: -5.4px;
   }
 }
 
@@ -319,17 +320,6 @@ p {
     }
   }
 
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-
-    @media (min-width: 600px) {
-      font-size: 3.5rem;
-    }
-  }
-
   .first-activity {
     background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
@@ -394,14 +384,6 @@ p {
   margin: 20px;
   font-size: 32px;
   text-align: center;
-  h1 {
-    letter-spacing: 1.6px;
-    font-weight: 300;
-
-    span {
-      color: green;
-    }
-  }
 }
 // background-color: #aec2d1;
 
@@ -452,12 +434,15 @@ p {
     padding-right: 300px;
     padding-top: 200px;
     z-index: 888;
+    p {
+      color: rgb(146, 146, 146);
+    }
     @media (max-width: 900px) {
       width: 100%;
       padding-right: 2em;
       padding-left: 2em;
       padding-top: 20em;
-      margin-bottom: -630px;
+      margin-bottom: -650px;
     }
   }
 }
@@ -496,14 +481,17 @@ p {
 }
 
 .CTA-button-light {
-  background-color: rgb(138, 153, 148);
-  background-image: url("scottland5.jpg");
+  background-color: #f1f5f8;
   padding-bottom: 9em;
   padding-top: 9em;
   text-align: center;
   margin-bottom: 10rem;
   background-size: cover;
   background-position: top;
+
+  @media (max-width: 900px) {
+    background-color: #eceff2;
+  }
 
   p {
     max-width: 800px;
@@ -515,19 +503,26 @@ p {
   }
 }
 
+//menu
+
 .menu {
   // display: none;
   position: fixed;
   top: 0;
   right: -400px;
   width: 500px;
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
   background-color: rgb(47, 50, 64);
   padding: 2rem;
+  padding-right: 0;
   z-index: 9999;
   height: 100%;
   visibility: hidden;
   opacity: 0;
+
+  @media (max-width: 500px) {
+    width: 100% !important;
+  }
   // transition: visibility 0s, opacity s linear;
 
   // transform: translateX(100%);
