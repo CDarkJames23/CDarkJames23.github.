@@ -838,97 +838,24 @@ footer .p2 {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: scale(0);
+    -webkit-transform: translateY(60px);
   }
   100% {
     opacity: 1;
-    width: 100%;
+    -webkit-transform: translateY(0);
   }
 }
 @keyframes fadeInUp {
   0% {
-    transform: scale(0);
     opacity: 0;
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
-    width: 100%;
+    transform: translateY(0);
   }
 }
 .animated.fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-}
-@-webkit-keyframes bounceInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-500px);
-  }
-  60% {
-    transform: translateX(20px);
-  }
-  80% {
-    transform: translateX(-5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes bounceInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-500px);
-  }
-  60% {
-    transform: translateX(20px);
-  }
-  80% {
-    transform: translateX(-5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.animated.bounceInLeft {
-  -webkit-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-}
-
-@-webkit-keyframes bounceInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(2000px);
-  }
-  60% {
-    -webkit-transform: translateX(-20px);
-  }
-  80% {
-    -webkit-transform: translateX(5px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-@keyframes bounceInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(2000px);
-  }
-  60% {
-    transform: translateX(-20px);
-  }
-  80% {
-    transform: translateX(5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.animated.bounceInRight {
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }/*# sourceMappingURL=style.css.map */
