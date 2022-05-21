@@ -7,6 +7,19 @@
   overflow-x: hidden;
 }
 
+.fa-bars,
+.fa-xmark {
+  cursor: pointer;
+}
+
+.contact-banner {
+  background-image: url("https://images.unsplash.com/photo-1476990789491-712b869b91a5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1030");
+  text-align: center;
+  background-size: cover;
+  padding-top: 150px;
+  height: 400px;
+}
+
 .container {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
@@ -35,30 +48,6 @@ nav i {
   background-color: rgba(222, 230, 241, 0.241);
   color: rgb(0, 0, 0);
   border: 2.5px rgb(0, 0, 0) solid;
-  font-family: "Raleway", sans-serif;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  cursor: pointer;
-}
-
-.button-light {
-  background-color: rgba(0, 0, 0, 0.634);
-  color: white;
-  border: 2.5px white solid;
-  font-family: "Raleway", sans-serif;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  cursor: pointer;
-}
-
-.button-dark {
-  background-color: rgba(222, 230, 241, 0.241);
-  color: rgb(0, 0, 0);
-  border: 2.5px rgb(0, 0, 0) solid;
   transition: all 0.5s;
   font-family: "Raleway", sans-serif;
   padding: 1rem 2rem;
@@ -66,9 +55,15 @@ nav i {
   font-weight: 600;
   letter-spacing: 0.3px;
   cursor: pointer;
+}
+.button-dark a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 .button-dark:hover {
   background-color: black;
+}
+.button-dark:hover a {
   color: white;
 }
 
@@ -84,9 +79,15 @@ nav i {
   letter-spacing: 0.3px;
   cursor: pointer;
 }
+.button-light a {
+  text-decoration: none;
+  color: white;
+}
 .button-light:hover {
-  color: black;
   background-color: white;
+}
+.button-light:hover a {
+  color: black;
 }
 
 h1 {
@@ -110,6 +111,7 @@ h2 {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  text-transform: uppercase !important;
 }
 @media (min-width: 720px) {
   h2 {
@@ -248,7 +250,10 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 500px) {
+.half-image-text__hide-image img {
+  width: 100%;
+}
+@media (max-width: 700px) {
   .half-image-text__hide-image {
     display: none;
   }
@@ -338,7 +343,7 @@ p {
   background-color: rgba(0, 0, 0, 0.933);
 }
 .activities .first-activity {
-  background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.unsplash.com/photo-1571936804022-90d128047136?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2NvdGxhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500");
 }
 .activities .second-activity {
   background-image: url("https://images.pexels.com/photos/3061171/pexels-photo-3061171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -347,7 +352,7 @@ p {
   background-image: url("https://images.pexels.com/photos/2384576/pexels-photo-2384576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .activities .fourth-activity {
-  background-image: url("https://images.pexels.com/photos/4091960/pexels-photo-4091960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/2880638/pexels-photo-2880638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 .first-kayak {
@@ -482,9 +487,10 @@ p {
   max-width: 1500px;
   transform: translateY(-650px);
   color: white;
-  padding-left: 100px;
-  padding-right: 300px;
   padding-top: 200px;
+  padding-right: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   z-index: 888;
 }
 .testimony__color p {
@@ -494,6 +500,7 @@ p {
   .testimony__color {
     padding-right: 0;
     padding-left: calc(50vw - 375px);
+    padding-top: 140px;
   }
 }
 @media (min-width: 992px) {
@@ -599,7 +606,7 @@ p {
   padding-top: 10vh;
   margin-left: 3rem;
 }
-.menu li {
+.menu .menu li {
   list-style: none;
 }
 .menu a {
@@ -623,12 +630,18 @@ p {
   padding-right: 0;
   z-index: 9999;
   height: 100%;
+  margin-top: -100px;
 }
 .menu2 img {
   width: 90%;
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 720px) {
+  .menu2 img {
+    display: none;
+  }
 }
 .menu2 button {
   margin-top: 4em;
@@ -778,4 +791,10 @@ footer .p {
 }
 footer .p2 {
   margin-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 6rem;
+    padding-bottom: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

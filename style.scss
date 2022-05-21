@@ -7,6 +7,20 @@
   overflow-x: hidden;
 }
 
+.fa-bars,
+.fa-xmark {
+  cursor: pointer;
+}
+
+.contact-banner {
+  background-image: url("https://images.unsplash.com/photo-1476990789491-712b869b91a5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1030");
+  text-align: center;
+  background-size: cover;
+
+  padding-top: 150px;
+  height: 400px;
+}
+
 .container {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
@@ -43,20 +57,6 @@ nav {
   cursor: pointer;
 }
 
-.button-dark {
-  background-color: rgba(222, 230, 241, 0.241);
-  color: rgb(0, 0, 0);
-  border: 2.5px rgb(0, 0, 0) solid;
-  @include button-layout();
-}
-
-.button-light {
-  background-color: rgba(0, 0, 0, 0.634);
-  color: white;
-  border: 2.5px white solid;
-  @include button-layout();
-}
-
 @mixin button-layout {
   font-family: "Raleway", sans-serif;
   padding: 1rem 2rem;
@@ -72,9 +72,15 @@ nav {
   border: 2.5px rgb(0, 0, 0) solid;
   transition: all 0.5s;
   @include button-layout();
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
   &:hover {
     background-color: black;
-    color: white;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -84,9 +90,15 @@ nav {
   border: 2.5px white solid;
   transition: all 0.5s;
   @include button-layout();
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &:hover {
-    color: black;
     background-color: white;
+    a {
+      color: black;
+    }
   }
 }
 h1 {
@@ -109,6 +121,7 @@ h2 {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  text-transform: uppercase !important;
 
   @media (min-width: 720px) {
     font-size: 30px;
@@ -250,7 +263,13 @@ p {
     object-fit: cover;
   }
 
-  @media (max-width: 500px) {
+  &__hide-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
     &__hide-image {
       display: none;
     }
@@ -343,7 +362,7 @@ p {
   }
 
   .first-activity {
-    background-image: url("https://images.pexels.com/photos/39003/scotland-united-kingdom-england-isle-of-skye-39003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.unsplash.com/photo-1571936804022-90d128047136?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2NvdGxhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500");
   }
 
   .second-activity {
@@ -355,7 +374,7 @@ p {
   }
 
   .fourth-activity {
-    background-image: url("https://images.pexels.com/photos/4091960/pexels-photo-4091960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/2880638/pexels-photo-2880638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
 }
 
@@ -380,7 +399,6 @@ p {
 .fifth-kayak {
   background-image: url("https://images.unsplash.com/photo-1588472235276-7638965471e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
 }
-
 .sixth-kayak {
   background-image: url("https://images.unsplash.com/photo-1627510774200-a35104e53268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
   background-position: center;
@@ -492,9 +510,10 @@ p {
     max-width: 1500px;
     transform: translateY(-650px);
     color: white;
-    padding-left: 100px;
-    padding-right: 300px;
     padding-top: 200px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     z-index: 888;
     p {
       color: rgb(146, 146, 146);
@@ -503,6 +522,7 @@ p {
     @media (min-width: 768px) {
       padding-right: 0;
       padding-left: calc(50vw - 375px);
+      padding-top: 140px;
     }
 
     @media (min-width: 992px) {
@@ -615,7 +635,7 @@ p {
     margin-left: 3rem;
   }
 
-  li {
+  .menu li {
     list-style: none;
   }
 
@@ -642,10 +662,14 @@ p {
   padding-right: 0;
   z-index: 9999;
   height: 100%;
+  margin-top: -100px;
   img {
     width: 90%;
     height: 600px;
     object-fit: cover;
+    @media (max-width: 720px) {
+      display: none;
+    }
   }
 
   button {
@@ -792,5 +816,10 @@ footer {
 
   .p2 {
     margin-bottom: 4rem;
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 6rem;
+    padding-bottom: 2.5rem;
   }
 }
