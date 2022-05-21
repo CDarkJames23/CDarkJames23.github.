@@ -466,7 +466,7 @@ p {
 }
 .testimony img {
   position: relative;
-  top: -200px;
+  top: -500px;
   transform: translateX(20%);
   -o-object-fit: cover;
      object-fit: cover;
@@ -862,7 +862,7 @@ footer .p2 {
 @-webkit-keyframes bounceInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-500px);
   }
   60% {
     transform: translateX(20px);
@@ -878,7 +878,7 @@ footer .p2 {
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-500px);
   }
   60% {
     transform: translateX(20px);

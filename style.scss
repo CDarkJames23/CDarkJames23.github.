@@ -492,7 +492,7 @@ p {
   img {
     // height: 700px;
     position: relative;
-    top: -200px;
+    top: -500px;
     transform: translateX(20%);
     object-fit: cover;
     overflow: hidden;
@@ -952,7 +952,7 @@ footer {
 @-moz-keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -moz-transform: translateX(-200px);
+    -moz-transform: translateX(-500px);
   }
 
   60% {
@@ -972,7 +972,7 @@ footer {
 @-o-keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -o-transform: translateX(-200px);
+    -o-transform: translateX(-500px);
   }
 
   60% {
@@ -993,7 +993,7 @@ footer {
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-500px);
   }
 
   60% {
