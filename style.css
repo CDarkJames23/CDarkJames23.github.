@@ -175,6 +175,12 @@ p {
   }
 }
 
+@media (max-width: 720px) {
+  .hiding-block {
+    margin-top: 100vh;
+  }
+}
+
 .second-section {
   text-align: center;
   text-align: center;
@@ -466,7 +472,7 @@ p {
 }
 .testimony img {
   position: relative;
-  top: -500px;
+  top: -200px;
   transform: translateX(20%);
   -o-object-fit: cover;
      object-fit: cover;
