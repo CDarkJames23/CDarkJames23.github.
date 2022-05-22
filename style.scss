@@ -115,6 +115,10 @@ h1 {
   @media (min-width: 720px) {
     font-size: 6rem;
   }
+
+  @media (max-width: 350px) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
